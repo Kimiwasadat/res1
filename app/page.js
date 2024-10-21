@@ -255,7 +255,7 @@ export default function Home() {
       </Box>
 
       {/* About Me Section */}
-      <Box id="aboutme" sx={{ width: "100%", height: "auto", borderRadius: '20px', color: "#FAF9F6", ml:'3%',mt:'5%'}}>
+      <Box id="aboutme" sx={{ width: "150%", height: "auto", borderRadius: '20px', color: "#FAF9F6", ml:'3%',mt:'5%'}}>
         <Box sx={{ color: 'black', }}>
           <Grid container spacing={4}>
             {cardData.map((card, index) => (
@@ -270,21 +270,21 @@ export default function Home() {
           </Grid>
         </Box>
       </Box>
-      <Box sx={{ width: "90%", height: "400px", borderRadius: '20px', color: "#FAF9F6", textAlign: 'left', mt:'25%', ml:'45%'}}>
+      <Box sx={{ width: "90%", height: "400px", borderRadius: '20px', color: "#FAF9F6", textAlign: 'left', mt:'5%',ml:'3%' }}>
       <div id="experience">
       {cardData2.map((card, index) => (
                 <FlipC 
                   key={index}
                   frontContent={card.frontContent}
                   backContent={card.backContent}
-                  width="60%"
+                  width="100%"
                   height="500px"
                   padding='0px'
                 />
             ))}
       </div>
       </Box>
-      <Box id="resume"sx={{ width: "80%", height: "auto", borderRadius: '20px', color: "#FAF9F6", mt:'30%', ml:'3%' }}>
+      <Box id="resume"sx={{ width: "100%",textAlign:'left', height: "auto", borderRadius: '20px', color: "#FAF9F6", mt:'15%', ml:'1%' }}>
         <Box sx={{ color: 'black',}}>
           <Grid container spacing={4}>
             {cardData3.map((card, index) => (
@@ -293,7 +293,7 @@ export default function Home() {
                   frontContent={card.frontContent}
                   backContent={card.backContent}
                   href='https://docs.google.com/document/d/16OWxg84fuKydJ71ILmG-j95H2Lepzb0zaqfQZchCU5Q/pub'
-                  width="80%"
+                  width="100%"
                   height="500px"
                 />
             ))}
